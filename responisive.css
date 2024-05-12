@@ -1,3 +1,8 @@
+@media screen and (min-width: 400px) {
+    #sign-form {
+        padding: 25px;
+    }
+}
 @media screen and (min-width: 750px) {
     body {
         background: var(--Red) url(images/bg-intro-desktop.png) no-repeat;
@@ -34,7 +39,7 @@
 
     .left h1 {
         width: 470px;
-        font-size: 55px;
+        font-size: 48px;
         line-height: 1.15;
     }
 
@@ -47,7 +52,12 @@
     }
 }
 
-@media screen and (min-width: 1250px) {
+@media screen and (min-width: 1060px) {
+    .left h1 {
+        font-size: 55px;
+    }
+}
+    @media screen and (min-width: 1250px) {
     .container {
         width: 1150px;
         grid-template-columns: 550px 550px;
