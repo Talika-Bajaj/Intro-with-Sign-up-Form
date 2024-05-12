@@ -1,7 +1,9 @@
 fname.addEventListener("focus", () => {
     document.querySelector('.fName').classList.add('active');
+    document.getElementById('fname').style.borderColor = 'hsl(249, 10%, 26%)';
 });
 fname.addEventListener("focusout", () => {
+    document.getElementById('fname').style.borderColor = 'hsl(246, 25%, 77%)';
     if (fname.value === "") {
         document.querySelector('.fName').classList.remove('active');
     }
@@ -10,8 +12,10 @@ fname.addEventListener("focusout", () => {
 
 lname.addEventListener("focus", () => {
     document.querySelector('.lName').classList.add('active');
+    document.getElementById('lname').style.borderColor = 'hsl(249, 10%, 26%)';
 });
 lname.addEventListener("focusout", () => {
+    document.getElementById('lname').style.borderColor = 'hsl(246, 25%, 77%)';
     if (lname.value === "") {
         document.querySelector('.lName').classList.remove('active');
     }
@@ -20,8 +24,10 @@ lname.addEventListener("focusout", () => {
 
 email.addEventListener("focus", () => {
     document.querySelector('.email').classList.add('active');
+    document.getElementById('email').style.borderColor = 'hsl(249, 10%, 26%)';
 });
 email.addEventListener("focusout", () => {
+    document.getElementById('email').style.borderColor = 'hsl(246, 25%, 77%)';
     if (email.value === "") {
         document.querySelector('.email').classList.remove('active');
     }
@@ -29,9 +35,11 @@ email.addEventListener("focusout", () => {
 
 
 pwd.addEventListener("focus", () => {
+    document.getElementById('pwd').style.borderColor = 'hsl(249, 10%, 26%)';
     document.querySelector('.pass').classList.add('active');
 });
 pwd.addEventListener("focusout", () => {
+    document.getElementById('pwd').style.borderColor = 'hsl(246, 25%, 77%)';
     if (pwd.value === "") {
         document.querySelector('.pass').classList.remove('active');
     }
