@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --Red: hsl(0, 100%, 74%);
+--Green: hsl(154, 59%, 51%);
+
+/* Accent */
+
+--Blue: hsl(248, 32%, 49%);
+
+/* Neutral */
+
+---Dark_Blue: hsl(249, 10%, 26%);
+--Grayish_Blue: hsl(246, 25%, 77%);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background: var(--Red) url(images/bg-intro-mobile.png) no-repeat;
+    background-size: cover;
+}
+
+main {
+    margin: 50px;
+}
+
+.container {
+    width: 90vw;
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 30px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.left, .right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.left p {
+    line-height: 1.8;
+}
+
+.msg {
+    margin-top: 30px;
+    background-color: var(--Blue);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 7px 2px 2px rgba(0,0,0,0.3);
+    /*  */
+}
+
+.msg p {
+    margin: auto;
+    width: 70%;
+}
+
+#sign-form {
+    width: 100%;
+    background-color: #fff;
+    color: var(---Dark_Blue);
+    padding: 31px;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 20px;
+}
+
+.input-group {
+    position: relative;
+    width: 100%;
+}
+
+.all-labels {
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    font-weight: 500;
+    z-index: 2;
+    transition: all 0.5s ease-in;
+}
+
+.all-labels.active {
+    top: 5px;
+    font-size: 14px;
+}
+
+input {
+    font-weight: 500;
+    border-radius: 8px;
+    border:  1px solid var(--Grayish_Blue);
+    width: 100%;
+    padding: 23px 18px 8px;
+} 
+
+#input-pass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-icon {
+    display: none;
+    position: absolute;
+    right: 9px;
+    top: 15px;
+}
+
+.error {
+    display: none;
+    color: var(--Red);
+    text-align: right;
+}
+#error-msg {
+    display: none;
+    color: var(--Red);
+    text-align: right;
+}
+
+.eye {
+    position: absolute;
+    right: 45px;
+    top: 15px;
+}
+.hide-pass {
+    display: none;
+}
+
+#trial-btn {
+    color: white;
+    font-size: 18px;
+    box-shadow: 0 5px 2px 2px hsl(154deg 61% 40.01%);
+    border-radius: 8px;
+    border: none;
+    padding: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    background-color: var(--Green);
+}
+
+#trial-btn:hover {
+    background-color: hsl(154deg 63.34% 67.35%);
+}
+
+.small-text {
+    font-size: 14px;
+}
+
+span {
+    color: var(--Red);
+    font-weight: 700;
+}
