@@ -133,8 +133,10 @@ input {
     display: none;
     color: var(--Red);
     text-align: right;
+    font-size: 14px;
 }
 #error-msg {
+    font-size: 14px;
     display: none;
     color: var(--Red);
     text-align: right;
