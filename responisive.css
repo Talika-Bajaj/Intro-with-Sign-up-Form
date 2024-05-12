@@ -1,16 +1,16 @@
 @media screen and (min-width: 750px) {
     body {
         background: var(--Red) url(images/bg-intro-desktop.png) no-repeat;
-    /* background-size: cover; */
+        /* background-size: cover; */
     }
+
     main {
         margin: 0;
     }
+
     .container {
         grid-template-columns: 47% 50%;
         align-items: center;
-        /* width: 85vw; */
-        /* gap: 50px; */
     }
 
     .left {
@@ -22,27 +22,25 @@
         width: 405px;
         font-size: 41px;
     }
+
     .msg {
         margin-top: 0;
-        padding: 25px 13px;
+        padding: 16px 13px;
     }
 
 }
 
 @media screen and (min-width: 900px) {
-    
-    .left h1 {
-        /* width: 405px; */
-        font-size: 48px;
-    }
 
-   
+    .left h1 {
+        width: 470px;
+        font-size: 55px;
+        line-height: 1.15;
+    }
 
     #sign-form {
         padding: 41px;
-    } 
-
-   
+    }
 
     .small-text {
         font-size: 12px;
@@ -52,6 +50,6 @@
 @media screen and (min-width: 1250px) {
     .container {
         width: 1150px;
-        grid-template-columns: 550px 515px;
+        grid-template-columns: 550px 550px;
     }
 }
